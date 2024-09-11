@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slideshow {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slideShow 15s infinite;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-top: 5px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-content .btn {
+    display: inline;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #0056b3;
+}
+.slideshow .hero-content:nth-child(1) {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #313131;
+}
+
+.slideshow .hero-content:nth-child(2) {
+    background-image: url('3.jpg');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    background-color: #313131;
+}
+
+.slideshow .hero-content:nth-child(3) {
+    background-image: url('44.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #313131;
+}
+
+@keyframes slideShow {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+header {
+    /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png'); */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #313131;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1, h5 {
+    color: white;
+}
+
+button {
+    background-color: #4050df;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #3549c3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #4050df;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 400px;
+    margin-left: 370px;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    color: #4050df;
+}
+
+.hex-item {
+    width: 120px;
+    height: 120px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    transition: background-color 0.3s ease;
+    color: #4050df;
+}
+
+.hex-item p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0046B5;
+}
+
+/* .hex-item.highlighted {
+    background-color: yellow;
+    color: white;
+} */
+
+.hex-item:hover {
+    background-color: yellow;
+    color: white;
+}
+
+.hex-item:nth-child(odd) {
+    margin-top: 40px;
+}
+
+.curriculum-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.curriculum-item {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.curriculum-item:hover {
+    transform: translateY(-5px);
+}
+
+.curriculum-item h3 {
+    color: #0046B5;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.curriculum-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.social-logo {
+    width: 36px;
+    height: 36px;
+    margin: 0 10px;
+    transition: transform 0.5s ease;
+}
+
+.social-logo:hover {
+    transform: scale(1.2);
+}
