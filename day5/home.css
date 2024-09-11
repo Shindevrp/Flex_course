@@ -1,0 +1,175 @@
+body {
+    font-family: "Roboto";
+}
+
+.header {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png");
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-color: #313131;
+    padding: 80px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.main-heading {
+    color: #fff;
+    font-family: "Roboto";
+    /* font-weight: bold; */
+    font-size: 40px;
+}
+
+.main-para {
+    color: #fff;
+    font-size: medium;
+}
+
+.btn {
+    color: #fff;
+    background-color: #0d3faf;
+    padding-top: 13px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 13px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #34559b;
+}
+
+.navbar {
+    background-color: black;
+    width: 100%;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list-elememnts:hover {
+    background-color: #0d3faf;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.main-body {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #0d3faf;
+}
+
+.section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.laptop-image {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-curriculum {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 16%;
+}
+
+.card h2 {
+    color: #0d3faf;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    color: black;
+}
+  
+
+.hex-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    color: #4050df;
+}
+
+.hex-item {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    transition: background-color 0.3s ease;
+    color: #4050df;
+}
+
+.hex-item p {
+    font-size: 20px;
+    font-weight: bold;
+    color:#0046B5;
+
+}
+
+.hex-item.highlighted {
+    background-color: yellow;
+}
+
+.hex-item:hover {
+    background-color: yellow;
+    color: white;
+}
+
+.hex-item:nth-child(odd){
+    margin-top: 40px
+}
